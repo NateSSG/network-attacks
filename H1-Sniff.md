@@ -127,3 +127,36 @@ Yhteenvetona voidaan todeta, että kyseessä on lyhyt verkkoselailusessio, jossa
 
 <img width="1140" height="900" alt="packet size and how long it took" src="https://github.com/user-attachments/assets/566b1b53-d0ed-417b-b274-7682cd6b4887" />
 
+##  Mitä selainta käyttäjä käyttää?
+
+Ensiksi suodatettiin TLS:stä vain Client Hello -paketit. Tämä on se handshake, jossa selain ja palvelin käytännössä tekevät “sopimuksen” kommunikoida keskenään. Sitten järjestin paketit aikajärjestykseen ja valitsin ensimmäisen handshake-paketin, koska se on alkuperäinen viesti ja paras fingerprintin muodostamiseen.
+
+Sitten laajensin Wiresharkissa Transport Layer Security → Handshake Protocol → Client Hello ja katsoin kaikki Cipher Suites, Extensions ja TLS-versiot — kaiken sen, mitä selain kertoo tuetuista asetuksistaan. Nämä kentät muodostavat niin sanotun JA3-fingerprintin.
+
+Seuraavaksi kopioin fingerprintin ja käytin ja3.com-sivustoa vertaamaan sitä tunnetuihin fingerprintteihin. Sivusto antoi todennäköisen selaimen, jota käytettiin.
+
+<img width="1720" height="970" alt="handhsake protocol filtering tls" src="https://github.com/user-attachments/assets/96cbe72a-96e5-47e5-a7ff-8a73d9854220" />
+
+
+<img width="857" height="368" alt="copied the hash of the handshake" src="https://github.com/user-attachments/assets/fd327512-2ee3-4009-ad1c-6ed05a7f1d66" />
+
+
+<img width="1716" height="968" alt="ja3 helped in this case" src="https://github.com/user-attachments/assets/92e9733b-c243-401a-9632-ba2f614e3602" />
+
+## Minkä merkkinen verkkokortti käyttäjällä on
+
+Kun katsoin Ethernet-kerrosta Wiresharkissa, sieltä näkee yleensä käyttäjän verkkokortin (NIC). Tavallisesti Wireshark näyttää sekä MAC-osoitteen että kortin valmistajan/merkin. Tässä kaappauksessa se kuitenkin näytti vain MAC-osoitteen, ei merkkiä.
+
+Jotta sain lisätietoa, kopioin MAC-osoitteen ja käytin MAC-vendor lookup -työkalua. Työkalu arveli, että kyseessä voisi olla Realtek-verkkokortti, mutta varmuutta ei ole. Syynä tähän voi olla se, että MAC-osoite on paikallisesti määritetty (LAA), eli käyttöjärjestelmä tai virtuaalikone on asettanut sen itse. Se voi myös olla satunnaistettu, mikä on nykyaikainen yksityisyyden suojaus, joka estää laitteen seurannan.
+
+Eli käytännössä tiedämme, mikä MAC-osoite kuuluu kortille, mutta emme voi varmasti sanoa valmistajaa, koska kyseessä voi olla LAA, MAC-randomisointi tai virtuaalinen verkkokortti.
+
+<img width="1653" height="567" alt="network card" src="https://github.com/user-attachments/assets/fb7c687c-42c7-4699-8f0f-88561f2110ce" />
+
+<img width="1213" height="303" alt="mac address lookup" src="https://github.com/user-attachments/assets/9c2bb341-5072-4d59-9a94-d69bcbf2ee4e" />
+
+<img width="1130" height="429" alt="potential realtek nic" src="https://github.com/user-attachments/assets/e16c8949-b073-493d-b51a-e197e4950e90" />
+
+
+
+
