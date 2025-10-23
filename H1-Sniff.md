@@ -98,4 +98,29 @@ Lyhyt selitys: Sovelluskerros sisältää itse protokollan tietosisällön. Täs
 
 <img width="1677" height="800" alt="503617626-ed34b3ab-7922-46cc-a494-502495f4345f" src="https://github.com/user-attachments/assets/65a22e47-8c1a-47d4-ae8b-b02ffb5e5749" />
 
+## Mitäs tuli surffattua?
+
+Kaappaus näyttää tavallista verkkoselaamista. Käyttäjä (todennäköisesti Tero Karvinen) vierailee omalla verkkosivullaan terokarvinen.com ja tämän jälkeen tekee yhteyden ulkopuoliseen palveluun goatcounter.com, joka toimii todennäköisesti kävijäseurannan tai analytiikan työkaluna.
+
+Aluksi näkyy DNS-kyselyitä, joissa selvitetään kyseisten verkkotunnusten IP-osoitteita. Tämän jälkeen liikenne jatkuu HTTPS-yhteytenä (TLS:n ja TCP:n kautta), mikä viittaa suojattuun verkkoselailuun. Kaappauksessa esiintyy myös ARP-paketteja, joissa paikallinen laite kysyy verkon toisen laitteen (192.168.122.7) MAC-osoitetta – tämä on normaalia lähiverkon toimintaa.
+
+Kaappauksen loppupuolella näkyy useita ACK- ja FIN-paketteja, jotka kertovat yhteyksien päättämisestä.
+
+Yhteenvetona voidaan todeta, että kyseessä on lyhyt verkkoselailusessio, jossa käyttäjä avaa oman sivustonsa ja hyödyntää sen yhteydessä ulkoista palvelua. Liikenne on täysin normaalia ja tyypillistä selaimen toimintaa.
+
+
+<img width="1685" height="298" alt="google browser showing in wireshark" src="https://github.com/user-attachments/assets/970d23c8-1c20-4a77-a8db-70541911b8f8" />
+
+
+
+<img width="1402" height="67" alt="terokarvinen web page showing in wireshark" src="https://github.com/user-attachments/assets/2226af03-4937-4308-9d8a-85b54e68f6be" />
+
+
+
+
+<img width="1697" height="672" alt="amount of devices on the wireshark capture" src="https://github.com/user-attachments/assets/7406f619-72a2-4479-9ccf-c8d1f6770d32" />
+
+<img width="1367" height="738" alt="protocols we could find " src="https://github.com/user-attachments/assets/ca059b0d-8d1d-4672-9e01-e1d68318067a" />
+
+<img width="1140" height="900" alt="packet size and how long it took" src="https://github.com/user-attachments/assets/566b1b53-d0ed-417b-b274-7682cd6b4887" />
 
