@@ -80,7 +80,7 @@ Mitä siinä näkyy (esimerkistä):
 - Kohdeportti 53585 (ephemeral/asiakasportti)
 - Pituus/Checksums (Wireshark näyttää)
 
-Lyhyt selitys: Kuljetuskerros tarjoaa prosessien välisen liikenteen kanavat (portit). Tässä kyseessä on UDP-paketti, eli yhteydetön kuljetus (nopea, mutta ei varmista että paketti on saapunut kohteeseen).
+Lyhyt selitys: Kuljetuskerros tarjoaa prosessien välisen liikenteen kanavat (portit). Tässä kyseessä on UDP-paketti, eli yhteydetön kuljetus (nopea, mutta ei varmista että paketti on saapunut kohteeseen, yleensä paras sovelluksissa jossa ollaan livenä, kuten Twitch, Zoom, Teams tai verkkopelit).
 
 
 
