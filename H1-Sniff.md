@@ -82,5 +82,16 @@ Mitä siinä näkyy (esimerkistä):
 
 Lyhyt selitys: Kuljetuskerros tarjoaa prosessien välisen liikenteen kanavat (portit). Tässä kyseessä on UDP-paketti, eli yhteydetön kuljetus (nopea, mutta ei varmista että paketti on saapunut kohteeseen, yleensä paras sovelluksissa jossa ollaan livenä, kuten Twitch, Zoom, Teams tai verkkopelit).
 
+## 4) Sovelluskerros (DNS) Application
+
+Mitä laatikoida: Packet Details paneelin Domain Name System (response) lohko ja Packet Bytes näytöstä DNS payload (kysely/vastausosat).
+
+Mitä siinä näkyy (esimerkistä):
+- DNS vastaa kyselyyn terokarvinen.goatcounter.com
+- A: 65.21.71.180
+- AAAA: 2a01:4f9:3081:5413::2
+
+Lyhyt selitys: Sovelluskerros sisältää itse protokollan tietosisällön. Tässä DNS kertoo domainin IP-osoitteet, joita selain tai muu sovellus käyttää.
+
 
 
