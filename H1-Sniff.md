@@ -16,6 +16,15 @@ Disk: 35 GB
 
 Network: NAT
 
+## Tiivistys
+Wireshark on yksi johtavista verkon kuuntelu- ja analysointityökaluista. Sen avulla voi tallentaa verkkoliikennettä ja tarkastella yksityiskohtaisia tietoja paketeista. Tietoja voi suodattaa Display-filtereillä, jolloin näkyville jää vain haluttu liikenne. Network interface vastaa käytännössä verkkokorttia, mutta se ei välttämättä ole fyysinen laite. Tyypillisesti interfacen etuliite kertoo sen tyypin:
+
+- en = langallinen Ethernet
+
+- wl = langaton WLAN
+
+- lo = loopback-adapteri
+
 ## Linux
 Kali linuxen asennuksessa ei ilmennyt mitään ongelmia.
 
