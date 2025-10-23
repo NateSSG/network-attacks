@@ -196,11 +196,11 @@ Lisäksi kaappauksesta näkyi myös muita protokollia, kuten ARP ja UDP, jotka o
 
 ## Lähteet
 
-<a href="https://terokarvinen.com/wireshark-getting-started/"> Wireshark - Getting Started.</a>, 
-<a href="https://terokarvinen.com/network-interface-linux/"> Network Interface Names on Linux </a>,
-<a href="https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/">Cloudflare what happens in a tls handshake.</a>,
-<a href="https://edgewatch.com/blog/ja3-fingerprinting/">Edgewatch ja3 fingerprinting</a>,
-<a href="https://www.goatcounter.com/">GoatCounter</a>
+- <a href="https://terokarvinen.com/wireshark-getting-started/"> Wireshark - Getting Started.</a>, 
+- <a href="https://terokarvinen.com/network-interface-linux/"> Network Interface Names on Linux </a>,
+- <a href="https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/">Cloudflare what happens in a tls handshake.</a>,
+- <a href="https://edgewatch.com/blog/ja3-fingerprinting/">Edgewatch ja3 fingerprinting</a>,
+- <a href="https://www.goatcounter.com/">GoatCounter</a>
 
 
 
