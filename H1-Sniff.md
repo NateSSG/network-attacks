@@ -25,8 +25,10 @@ Tehtävässä piti näyttää että pystyn katkaisemaan ja palauttamaan virtuaal
 
 ## Kuvat:
 
-
 <img width="1717" height="995" alt="network adapter pic" src="https://github.com/user-attachments/assets/52da77a2-a0f4-4b2d-b5b8-f105a5d11f87" />
+
+
+
 
 
 <img width="1722" height="992" alt="disconnect vm machine network" src="https://github.com/user-attachments/assets/c28fc1f9-edf2-4706-9803-737ddbe04f96" />
