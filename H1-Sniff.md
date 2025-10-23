@@ -80,7 +80,7 @@ Mitä siinä näkyy (esimerkistä):
 - Kohdeportti 53585 (ephemeral/asiakasportti)
 - Pituus/Checksums (Wireshark näyttää)
 
-Lyhyt selitys: Kuljetuskerros tarjoaa prosessien välisen liikenteen kanavat (portit). Tässä kyseessä on UDP-paketti, eli yhteydetön kuljetus (nopea, mutta ei varmista että paketti on saapunut kohteeseen, yleensä paras sovelluksissa jossa ollaan livenä, kuten Twitch, Zoom, Teams tai verkkopelit).
+Lyhyt selitys: Kuljetuskerros vastaa prosessien välisestä tiedonsiirrosta käyttämällä porttinumeroita. Tässä tapauksessa kyseessä on UDP-paketti, joka on yhteydetön kuljetusprotokolla. Se on nopea, mutta ei takaa että paketti saapuu perille. UDP sopii erityisen hyvin sovelluksiin, joissa reaaliaikaisuus on tärkeämpää kuin virheenkorjaus, kuten Twitchin, Zoomin, Teamsin tai verkkopelien tiedonsiirrossa.
 
 ## 4) Sovelluskerros (DNS) Application
 
