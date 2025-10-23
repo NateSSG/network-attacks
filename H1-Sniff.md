@@ -111,9 +111,12 @@ Yhteenvetona voidaan todeta, että kyseessä on lyhyt verkkoselailusessio, jossa
 
 <img width="1685" height="298" alt="google browser showing in wireshark" src="https://github.com/user-attachments/assets/970d23c8-1c20-4a77-a8db-70541911b8f8" />
 
+<img width="1402" height="67" alt="terokarvinen web page showing in wireshark" src="https://github.com/user-attachments/assets/d95f55f4-b74d-44a4-935c-5f5d7cf99231" />
 
+<img width="1666" height="142" alt="goatcounter with teros name in it" src="https://github.com/user-attachments/assets/c04f7144-1e88-4878-af8a-16b86bdc2f93" />
 
-<img width="1402" height="67" alt="terokarvinen web page showing in wireshark" src="https://github.com/user-attachments/assets/2226af03-4937-4308-9d8a-85b54e68f6be" />
+<img width="1153" height="41" alt="arp request" src="https://github.com/user-attachments/assets/615cfd3b-da99-4be7-8563-3ea7900ad25b" />
+
 
 
 
