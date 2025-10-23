@@ -167,6 +167,20 @@ Eli kaappauksesta näkyy tarkasti käyttäjän tekemät verkkopyynnöt ja se, mi
 
 <img width="1688" height="457" alt="dns query name thign" src="https://github.com/user-attachments/assets/f409f50e-4281-45e9-8050-5d61c5d01269" />
 
+##  Analyysi. Sieppaa pieni määrä omaa liikennettäsi
+
+Avasin terminaalin ja pingasin Googlea (8.8.8.8) ja samalla käytin Wiresharkia seuraamaan liikennettä. Kaappauksesta näkyi selvästi kaikki ICMP Echo Request -paketit (pingit) ja Echo Reply -paketit (vastaukset) kulkemassa edestakaisin.
+
+Wireshark näytti lähde- ja kohdeosoitteet, pakettien pituudet sekä sekvenssinumerot ja TTL-arvot, mikä auttaa näkemään, miten paketit kulkevat verkon läpi ja kuinka nopeasti ne saavat vastauksen. Tämä oli hyvä esimerkki yhteydettömästä liikenteestä, jossa näkyy pelkästään kysely ja vastaus ilman varsinaista dataa.
+
+Lisäksi kaappauksesta näkyi myös muita protokollia, kuten ARP ja UDP, jotka ovat osa normaalia verkon toimintaa. ICMP-pakettien perusteella pystyin helposti seuraamaan omaa verkkoliikennettäni ja varmistamaan, että ping-toiminnot toimivat odotetusti.
+
+
+<img width="651" height="378" alt="pinging from terminal" src="https://github.com/user-attachments/assets/02dbc07a-df87-4377-8b46-3144e1b285bf" />
+
+
+
+<img width="1712" height="682" alt="pingin google dns" src="https://github.com/user-attachments/assets/f4af1beb-5066-4512-acbb-9c8e2727fbaf" />
 
 
 
