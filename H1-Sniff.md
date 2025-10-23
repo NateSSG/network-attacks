@@ -157,6 +157,19 @@ Eli käytännössä tiedämme, mikä MAC-osoite kuuluu kortille, mutta emme voi 
 
 <img width="1130" height="429" alt="potential realtek nic" src="https://github.com/user-attachments/assets/e16c8949-b073-493d-b51a-e197e4950e90" />
 
+## Millä weppipalvelimella käyttäjä on surffaillut?
+
+Ensiksi suodatettiin kaappaus Wiresharkissa käyttämällä dns.qry.name -filtteriä, jotta näkyville tulisivat vain DNS-kyselyt eli käytännössä kaikki verkkosivut, joille käyttäjä yritti mennä. Tämän avulla oli helppo nähdä, mitä web-palvelimia hän käytti. Lista sisälsi terokarvinen.com, goatcounter.com, gc.zgo.at ja google.com.
+
+Kyselyjen järjestyksen perusteella näkee, että käyttäjä meni ensin Googleen, kopioi linkin ja laittoi sen GoatCounter.com-palveluun saadakseen tilastot. GoatCounter on verkkosivustojen kävijäseurantapalvelu, joka kerää tietoa siitä, kuinka monta ihmistä käy sivustolla, mistä he tulevat ja mitä sivuja he katsovat. gc.zgo.at toimii tässä GoatCounterin välityspalvelimena.
+
+Eli kaappauksesta näkyy tarkasti käyttäjän tekemät verkkopyynnöt ja se, miten hän käytti omaa sivustoaan yhdessä GoatCounterin kanssa saadakseen tilastoja.
+
+<img width="1688" height="457" alt="dns query name thign" src="https://github.com/user-attachments/assets/f409f50e-4281-45e9-8050-5d61c5d01269" />
+
+
+
+
 
 
 
