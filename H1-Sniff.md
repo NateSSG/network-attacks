@@ -93,5 +93,9 @@ Mitä siinä näkyy (esimerkistä):
 
 Lyhyt selitys: Sovelluskerros sisältää itse protokollan tietosisällön. Tässä DNS kertoo domainin IP-osoitteet, joita selain tai muu sovellus käyttää.
 
+## Kuva
+
+
+<img width="1677" height="800" alt="503617626-ed34b3ab-7922-46cc-a494-502495f4345f" src="https://github.com/user-attachments/assets/65a22e47-8c1a-47d4-ae8b-b02ffb5e5749" />
 
 
