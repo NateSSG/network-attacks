@@ -194,6 +194,9 @@ Lisäksi kaappauksesta näkyi myös muita protokollia, kuten ARP ja UDP, jotka o
 <img width="1712" height="682" alt="pingin google dns" src="https://github.com/user-attachments/assets/f4af1beb-5066-4512-acbb-9c8e2727fbaf" />
 
 
+## Lähteet
+
+<a href="https://terokarvinen.com/wireshark-getting-started/"> Wireshark - Getting Started.</a>, <a href="https://terokarvinen.com/network-interface-linux/"> Network Interface Names on Linux </a>, <a href="https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/">Cloudflare what happens in a tls handshake.</a>,<a href="https://edgewatch.com/blog/ja3-fingerprinting/">Edgewatch ja3 fingerprinting</a>, <a href="https://www.goatcounter.com/">GoatCounter</a>
 
 
 
