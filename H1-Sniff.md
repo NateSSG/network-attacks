@@ -173,6 +173,8 @@ Avasin terminaalin ja pingasin Googlea (8.8.8.8) ja samalla käytin Wiresharkia 
 
 Wireshark näytti lähde- ja kohdeosoitteet, pakettien pituudet sekä sekvenssinumerot ja TTL-arvot, mikä auttaa näkemään, miten paketit kulkevat verkon läpi ja kuinka nopeasti ne saavat vastauksen. Tämä oli hyvä esimerkki yhteydettömästä liikenteestä, jossa näkyy pelkästään kysely ja vastaus ilman varsinaista dataa.
 
+Wireshark näytti myös verkkokorttini (NIC) MAC-osoitteen ja tällä kertaa kortin valmistajan/merkin, mikä onnistui, koska kyseessä ei ollut satunnaistettu tai paikallisesti määritetty osoite. Aiemmassa tehtävässä MAC oli joko LAA (paikallisesti määritetty) tai satunnaistettu, joten Wireshark ei pystynyt näyttämään merkkiä.
+
 Lisäksi kaappauksesta näkyi myös muita protokollia, kuten ARP ja UDP, jotka ovat osa normaalia verkon toimintaa. ICMP-pakettien perusteella pystyin helposti seuraamaan omaa verkkoliikennettäni ja varmistamaan, että ping-toiminnot toimivat odotetusti.
 
 
